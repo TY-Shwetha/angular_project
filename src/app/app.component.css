@@ -1,0 +1,60 @@
+
+li a {
+    color:white;
+    text-align: center;
+    padding: 13px;
+    font-weight: bold;
+  }
+
+li a:hover{
+    background-color: thistle;
+} 
+
+/* for toggler button */
+#toggle{
+    height: 50px;
+}
+
+/* container */
+#container{
+    margin-left: 0%;
+    padding: 0%;
+}
+
+
+#main{
+    margin-left: 0%;
+    padding: 0%;
+}
+
+ul.icon-bar{
+    padding-left: 15px;
+}
+
+span.navbar-toggler-icon {
+    height: 20px;
+}
+
+
+
+table{
+    margin-top: 20px;
+    align-items: center;
+    max-width: min-content;
+    margin-left: 420px;  
+}
+
+button a{
+    text-decoration:none ;
+    font-weight: bold;
+    color: white;
+}
+
+th a:hover{
+    color: red;
+}
+
+navbar.navbar-light.bg-light{
+    margin-top: 20px;
+    margin-left: 80px;
+}

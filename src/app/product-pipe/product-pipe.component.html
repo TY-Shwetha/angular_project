@@ -1,0 +1,31 @@
+<!-- <div>
+  <form class="form-inline">
+    <input type="text" name="searchProduct" placeholder="search"  class="form-control mr-sm-2" [(ngModel)]='inputSearch'>
+  </form>
+</div> -->
+
+<div >
+    <form class="form-inline justify-content-center" style="text-align: center;display: flex;padding-left: 200px;padding-right: 360px;padding-bottom: 30px;padding-top: 30px;">
+      <input type="text" name="searchProduct" placeholder="search"  class="form-control mr-sm-2" [(ngModel)]='inputSearch'>
+      <button   class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ProductId</th>
+      <th scope="col">Product Image</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.slno}}<div *ngIf="(product.name == inputSearch)" class="book1" [innerHTML]= "product.name | highlight:product.name"></div></td>
+      <td> <img src="{{product.image}}" alt="" width="90px" height="90px"> <div *ngIf="(product.name == inputSearch)" class="book1" [innerHTML]= "product.name | highlight:product.name"></div></td>  
+      <td >{{product.name}}<div *ngIf="(product.name == inputSearch)" class="book1" [innerHTML]= "product.name | highlight:product.name"></div></td>
+      <td>{{product.price}}<div *ngIf="(product.name == inputSearch)" class="book1" [innerHTML]= "product.name | highlight:product.name"></div></td>
+    </tr>
+  </tbody>
+</table>

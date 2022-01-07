@@ -1,0 +1,13 @@
+div{
+    width: 90px;
+    padding-left: 765px;
+    padding-right: 30px;
+    
+}
+td{
+    text-align: center;
+    
+}
+td:hover{
+    color:blue;
+}
